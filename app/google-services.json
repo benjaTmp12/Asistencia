@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "433144542284",
+    "project_id": "asistencia-37735",
+    "firebase_url": "https://asistencia-37735-default-rtdb.firebaseio.com",
+    "storage_bucket": "asistencia-37735.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433144542284:android:aa3b63488a5e4ab59570e9",
+        "android_client_info": {
+          "package_name": "com.example.asistencia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtaGTiSk5FcUE39oJ13214ydN7BFSgKPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
