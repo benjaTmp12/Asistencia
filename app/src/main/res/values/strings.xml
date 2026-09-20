@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Asistencia Docente</string>
+    <string name="app_name">Asistencia Profesor</string>
     <string name="title_portal_docente">Portal Docente</string>
     <string name="subtitle_portal_docente">Gestión de asistencia en tiempo real</string>
     <string name="btn_crear_sesion">Crear Nueva Sesión</string>
