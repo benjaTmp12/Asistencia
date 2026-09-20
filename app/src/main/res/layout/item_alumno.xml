@@ -20,27 +20,12 @@
         android:layout_height="wrap_content"
         android:padding="12dp">
 
-        <!-- Avatar / Icono -->
-        <ImageView
-            android:id="@+id/ivAvatarAlumno"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:background="@drawable/ic_launcher_background"
-            android:backgroundTint="@color/primary_light"
-            android:contentDescription="Avatar"
-            android:padding="8dp"
-            android:src="@drawable/ic_person"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/primary_blue" />
-
         <!-- Nombre del Alumno -->
         <TextView
             android:id="@+id/tvNombreAlumno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="4dp"
             android:layout_marginEnd="8dp"
             android:ellipsize="end"
             android:maxLines="1"
@@ -49,7 +34,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/tvHoraRegistro"
             app:layout_constraintEnd_toStartOf="@id/tvNumeroOrden"
-            app:layout_constraintStart_toEndOf="@id/ivAvatarAlumno"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Juan Pérez González" />
 
@@ -58,13 +43,13 @@
             android:id="@+id/tvHoraRegistro"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="2dp"
             android:textColor="@color/text_secondary"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/tvNumeroOrden"
-            app:layout_constraintStart_toEndOf="@id/ivAvatarAlumno"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvNombreAlumno"
             tools:text="Registrado a las 17:42" />
 

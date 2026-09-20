@@ -10,23 +10,25 @@
     tools:context=".ui.crear.CrearSesionActivity">
 
     <!-- Botón Volver -->
-    <ImageView
+    <TextView
         android:id="@+id/btnVolver"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Volver"
+        android:background="?attr/selectableItemBackground"
         android:padding="8dp"
-        android:src="@drawable/ic_arrow_back"
+        android:text="Volver"
+        android:textColor="@color/primary_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/text_primary" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvHeaderCrear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/title_crear_sesion"
         android:textColor="@color/text_primary"
         android:textSize="22sp"
@@ -90,9 +92,7 @@
                 app:counterMaxLength="60"
                 app:errorEnabled="true"
                 app:helperText="@string/helper_curso"
-                app:helperTextEnabled="true"
-                app:startIconDrawable="@drawable/ic_school"
-                app:startIconTint="@color/primary_blue">
+                app:helperTextEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etCurso"

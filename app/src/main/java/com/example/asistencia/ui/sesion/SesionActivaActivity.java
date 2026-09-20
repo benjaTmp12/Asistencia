@@ -53,6 +53,14 @@ public class SesionActivaActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (idSesion != null) {
+            viewModel.iniciarObservacion(idSesion);
+        }
+    }
+
     private void configurarVistas(String cursoInicial, String codigoInicial) {
         if (cursoInicial != null) {
             binding.tvCursoHeader.setText(cursoInicial);

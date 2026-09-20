@@ -9,31 +9,18 @@
     android:padding="24dp"
     tools:context=".ui.principal.PrincipalActivity">
 
-    <!-- Header con Icono y Títulos -->
-    <ImageView
-        android:id="@+id/ivIconoPortal"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="32dp"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_school"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/primary_blue" />
-
     <TextView
         android:id="@+id/tvTituloPortal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="48dp"
         android:text="@string/title_portal_docente"
         android:textColor="@color/text_primary"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivIconoPortal" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvSubtituloPortal"
@@ -98,7 +85,7 @@
                 android:id="@+id/tvCaracteristica1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="⚡ Sincronización en tiempo real vía Firebase"
+                android:text="Sincronización en tiempo real vía Firebase"
                 android:textColor="@color/text_primary"
                 android:textSize="13sp" />
 
@@ -107,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="🔢 Código aleatorio de 4 dígitos para proyectar"
+                android:text="Código aleatorio de 4 dígitos para proyectar"
                 android:textColor="@color/text_primary"
                 android:textSize="13sp" />
 
@@ -116,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="👥 Monitoreo en vivo de asistencia"
+                android:text="Monitoreo en vivo de asistencia"
                 android:textColor="@color/text_primary"
                 android:textSize="13sp" />
 
@@ -135,8 +122,6 @@
         android:textStyle="bold"
         app:backgroundTint="@color/primary_blue"
         app:cornerRadius="12dp"
-        app:icon="@drawable/ic_school"
-        app:iconGravity="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

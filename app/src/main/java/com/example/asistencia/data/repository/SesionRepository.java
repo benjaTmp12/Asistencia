@@ -145,23 +145,31 @@ public class SesionRepository {
                     return;
                 }
 
-                Sesion sesion = snapshot.getValue(Sesion.class);
-                if (sesion != null) {
-                    sesion.setIdSesion(snapshot.getKey());
+                String curso = snapshot.child("curso").getValue(String.class);
+                String codigo = snapshot.child("codigo").getValue(String.class);
+                Boolean activa = snapshot.child("activa").getValue(Boolean.class);
+                String creadoEn = snapshot.child("creadoEn").getValue(String.class);
+                String idKey = snapshot.getKey();
 
-                    List<Alumno> listaAlumnos = new ArrayList<>();
-                    DataSnapshot alumnosSnapshot = snapshot.child("alumnos");
+                Sesion sesion = new Sesion(idKey, curso != null ? curso : "", codigo != null ? codigo : "", creadoEn, activa == null || activa);
+
+                List<Alumno> listaAlumnos = new ArrayList<>();
+                DataSnapshot alumnosSnapshot = snapshot.child("alumnos");
+                if (alumnosSnapshot.exists()) {
                     for (DataSnapshot alumnoSnap : alumnosSnapshot.getChildren()) {
-                        Alumno alumno = alumnoSnap.getValue(Alumno.class);
-                        if (alumno != null) {
-                            alumno.setIdAlumno(alumnoSnap.getKey());
-                            listaAlumnos.add(alumno);
+                        String idAlumno = alumnoSnap.getKey();
+                        String nombre = alumnoSnap.child("nombre").getValue(String.class);
+                        String horaRegistro = alumnoSnap.child("horaRegistro").getValue(String.class);
+                        if (nombre != null && !nombre.isEmpty()) {
+                            listaAlumnos.add(new Alumno(idAlumno, nombre, horaRegistro != null ? horaRegistro : ""));
                         }
                     }
+                }
 
-                    if (listener != null) {
-                        listener.onSesionActualizada(sesion, listaAlumnos);
-                    }
+                android.util.Log.d("SesionRepository", "Sesión actualizada: " + codigo + ", asistentes=" + listaAlumnos.size());
+
+                if (listener != null) {
+                    listener.onSesionActualizada(sesion, listaAlumnos);
                 }
             }
 

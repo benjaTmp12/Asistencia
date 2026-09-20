@@ -52,7 +52,7 @@
                 android:paddingTop="4dp"
                 android:paddingEnd="10dp"
                 android:paddingBottom="4dp"
-                android:text="🟢 EN VIVO"
+                android:text="EN VIVO"
                 android:textColor="@color/color_success"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -101,9 +101,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:fontFamily="monospace"
-                android:letterSpacing="0.3"
+                android:letterSpacing="0.15"
+                android:maxLines="1"
+                android:singleLine="true"
                 android:textColor="@color/primary_blue"
-                android:textSize="56sp"
+                android:textSize="44sp"
                 android:textStyle="bold"
                 tools:text="8 3 9 2" />
 
@@ -133,19 +135,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardCodigoProyeccion">
 
-        <ImageView
-            android:id="@+id/ivGrupoIcon"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:contentDescription="Grupo"
-            android:src="@drawable/ic_group"
-            app:tint="@color/primary_blue" />
-
         <TextView
             android:id="@+id/tvTituloAsistentes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:text="@string/label_asistentes"
             android:textColor="@color/text_primary"
@@ -200,19 +193,10 @@
         app:layout_constraintTop_toBottomOf="@id/layoutContador"
         tools:visibility="visible">
 
-        <ImageView
-            android:id="@+id/ivVacio"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:contentDescription="Esperando"
-            android:src="@drawable/ic_person"
-            app:tint="@color/text_secondary" />
-
         <TextView
             android:id="@+id/tvEstadoVacio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:gravity="center"
             android:text="@string/empty_alumnos"
             android:textColor="@color/text_secondary"
@@ -247,9 +231,6 @@
         android:textStyle="bold"
         app:backgroundTint="@color/color_error"
         app:cornerRadius="12dp"
-        app:icon="@drawable/ic_stop"
-        app:iconGravity="textStart"
-        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -90,10 +90,12 @@ public class Sesion {
         this.creadoEn = creadoEn;
     }
 
+    @Exclude
     public Map<String, Alumno> getAlumnos() {
         return alumnos;
     }
 
+    @Exclude
     public void setAlumnos(Map<String, Alumno> alumnos) {
         this.alumnos = alumnos != null ? alumnos : new HashMap<>();
     }
