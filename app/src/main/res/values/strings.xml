@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">Asistencia</string>
+    <string name="app_name">Asistencia Docente</string>
+    <string name="title_portal_docente">Portal Docente</string>
+    <string name="subtitle_portal_docente">Gestión de asistencia en tiempo real</string>
+    <string name="btn_crear_sesion">Crear Nueva Sesión</string>
+    <string name="info_profesor">Inicia una sesión de clase para generar automáticamente un código de 4 dígitos. Los alumnos ingresarán este código para registrar su asistencia en vivo.</string>
+
+    <!-- Crear Sesión -->
+    <string name="title_crear_sesion">Nueva Sesión</string>
+    <string name="hint_nombre_curso">Nombre del Curso / Asignatura</string>
+    <string name="helper_curso">Entre 3 y 60 caracteres (ej. Programación Móvil)</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión y Generar Código</string>
+    <string name="creando_sesion">Creando sesión en Firebase…</string>
+
+    <!-- Sesión Activa -->
+    <string name="title_sesion_activa">Sesión en Vivo</string>
+    <string name="label_codigo_proyeccion">CÓDIGO DE ASISTENCIA</string>
+    <string name="label_asistentes">Alumnos Asistentes</string>
+    <string name="empty_alumnos">Esperando que los alumnos ingresen el código…</string>
+    <string name="btn_finalizar_sesion">Finalizar y Cerrar Sesión</string>
+    <string name="dialog_cerrar_titulo">¿Finalizar Sesión?</string>
+    <string name="dialog_cerrar_mensaje">Una vez finalizada, los alumnos ya no podrán registrar asistencia en esta sesión. ¿Deseas continuar?</string>
+    <string name="dialog_btn_confirmar">Finalizar Sesión</string>
+    <string name="dialog_btn_cancelar">Cancelar</string>
+    <string name="sesion_finalizada_exito">Sesión cerrada exitosamente.</string>
 </resources>

@@ -23,6 +23,12 @@
         <activity
             android:name=".ui.principal.PrincipalActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.crear.CrearSesionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.sesion.SesionActivaActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
